@@ -1,0 +1,163 @@
+.order-form-header {
+    padding: 0 20px;
+}
+
+.order-form-title {
+    color: white;
+    padding: 10px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.order-form-description {
+    margin-bottom: 30px;
+}
+
+.order-form-text {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.offer-section {
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(119, 64, 172);
+    padding: 15px 70px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.offer-text {
+    color: white;
+    line-height: 2;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.wrapper-order-form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 20px;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    padding: 0;
+    position: relative;
+
+}
+
+.form-label {}
+
+.form-input {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-input:focus {
+    outline: 2px solid rgba(76, 175, 80, 0.5);
+    border: 1px solid #4CAF50;
+}
+
+.form-button {
+    background-color: rgb(73, 170, 81);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 50px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: rgb(62, 144, 69);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.7);
+    transform: translateY(-2px);
+}
+
+.terms-section {
+    padding: 10px 40px;
+}
+
+.terms-text {
+    color: grey;
+    font-size: 10px;
+    line-height: 2;
+
+}
+
+.terms-link {
+    color: rgb(219, 93, 93);
+    display: inline;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+input.invalid {
+    border: 1px solid red;
+}
+
+input.valid {
+    border: 1px solid green;
+}
+
+.error-message.hidden {
+    display: none;
+}
+
+.success-message.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.success-message {
+    color: green;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .order-form-header {
+        padding: 0;
+    }
+
+    .order-form-title {
+        text-align: start;
+    }
+
+    .order-form-text {
+        text-align: start;
+    }
+
+    .offer-section {
+        padding: 5px 20px;
+        width: 100%;
+    }
+}

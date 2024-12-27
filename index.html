@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Order summary component" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Order summary card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <!-- Seaction title -->
+        <section class="order-form-header">
+          <h1 class="order-form-title">Learn to code by watching others</h1>
+        </section>
+        <!-- Section text intro -->
+        <section class="order-form-description">
+          <p class="order-form-text">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </section>
+      </div>
+
+      <div class="order-form-wrapper">
+        <!-- Offer Section  -->
+        <section class="offer-section">
+          <span class="offer-text"
+            >Try it free 7 days then $20/mo. thereafter</span
+          >
+        </section>
+        <!-- Form section -->
+        <div class="wrapper-order-form">
+          <form id="order-form" class="order-form" novalidate>
+            <div class="form-group">
+              <label for="first-name" class="form-label"></label>
+              <input
+                type="text"
+                id="first-name"
+                name="first-name"
+                placeholder="First Name"
+                class="form-input"
+                required
+              />
+              <span class="error-message" id="first-name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="last-name" class="form-label"></label>
+              <input
+                type="text"
+                id="last-name"
+                name="last-name"
+                placeholder="Last Name"
+                class="form-input"
+                required
+              />
+              <span class="error-message" id="last-name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email-address" class="form-label"></label>
+              <input
+                type="email"
+                id="email-address"
+                name="email-address"
+                placeholder="Email Address"
+                class="form-input"
+                required
+              />
+              <span class="error-message" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="form-label"></label>
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                class="form-input"
+                required
+              />
+              <div class="icon" id="toggle-password">
+                <img
+                  src="./images/icon-open-eye.svg"
+                  alt="Open eye"
+                  id="password-eye-icon"
+                />
+              </div>
+              <span class="error-message hidden" id="password-error"></span>
+              <div class="success-message hidden" id="password-success"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password" class="form-label"></label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+                placeholder="Confirm password"
+                class="form-input"
+                required
+              />
+              <div class="icon" id="confirm-toggle-password">
+                <img
+                  src="./images/icon-open-eye.svg"
+                  alt="Open eye"
+                  id="confirm-password-eye-icon"
+                />
+              </div>
+              <span
+                class="error-message hidden"
+                id="confirm-password-error"
+              ></span>
+              <div
+                class="success-message hidden"
+                id="confirm-password-success"
+              ></div>
+            </div>
+
+            <button type="submit" class="form-button">
+              CLAIM YOUR FREE TRIAL
+            </button>
+          </form>
+          <!-- Terms and Conditions -->
+          <section class="terms-section">
+            <p class="terms-text">
+              By clicking the button, you are agreeing to our
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="terms-link"
+              >
+                Terms and Services
+              </a>
+            </p>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
